@@ -17,17 +17,31 @@
   position: relative;
 }
 
-.caption{
-position: absolute;
-border-radius: 10px;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(0, 15  , 152, 0.3);
+.caption {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 15, 152, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  opacity: 0;
+  padding-top: 70px;
+  transition: 0.4s;
 }
 
-.caption img{
-    width: 60px;
-    margin-bottom: 10px;
+.caption img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.program:hover .caption {
+  opacity: 1;
+  cursor: pointer;
+  padding-top: 0px;
 }
